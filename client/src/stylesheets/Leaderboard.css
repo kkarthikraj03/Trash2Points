@@ -1,0 +1,46 @@
+body{
+  /* background: linear-gradient(120deg, #31C48D, #f3f2f4); */
+  background-image: url('../images/leaderboard.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.leaderboard {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: #F4F4F4;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #31C48D;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+thead th {
+  background-color: #31C48D;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #F4F4F4;
+}
+
+tbody tr:hover {
+  background-color: #E6E6E6;
+}

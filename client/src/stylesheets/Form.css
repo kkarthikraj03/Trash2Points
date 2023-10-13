@@ -1,0 +1,79 @@
+.form {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  /* background: linear-gradient(120deg, #31C48D, #f3f2f4); */
+  background-image: url('../images/form.jpg');
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.611);
+}
+
+.heading {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 30px;
+  color: black;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+label {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+input,
+select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+
+.button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #31C48D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #2a9c7e;
+}
+
+/* Additional styling for the proof input */
+input[type="file"] {
+  margin-top: 5px;
+}
+
+/* Optional: Style for the dropdown */
+select {
+  appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') no-repeat right center;
+  background-size: 20px 20px;
+}

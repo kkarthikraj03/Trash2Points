@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #31C48D;
+    /* background-color: rgba(255, 255, 255, 1); */
+    position: static;
+    z-index: 100;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .logo img {
+    width: 100px; 
+    height: 55px;
+    margin-right: 10px; 
+    margin-left: 10px;
+  }
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu.open {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #31C48D;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.login-btn {
+    background-color: #FFFFFF;
+    color: #31C48D;
+    border: none;
+    padding: 7px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.login-btn a{
+    color: #31C48D;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #31C48D;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .menu-item {
+        color: #FFFFFF;
+        padding: 10px 20px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .menu-item:hover {
+        background-color: #FFFFFF;
+        color: #31C48D;
+    }
+
+    .login-btn {
+        background-color: #FFFFFF;
+        color: #31C48D;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}
